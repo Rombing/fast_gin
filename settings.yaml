@@ -1,5 +1,25 @@
 db:
-  host: 127.0.0.1
-  port: 3306
-  user: root
-  password: "qpzm1234"
+    mode: mysql
+    db_name: test_db
+    host: 127.0.0.1
+    port: 3306
+    user: root
+    password: qpzm1234
+redis:
+    addr: "127.0.0.1:6379"
+    password: ""
+    db: 1
+system:
+    mode: release
+    ip: 127.0.0.1
+    port: 8080
+jwt:
+    expires: 8 # 有效时间，单位小时
+    issuer: rom # 签发人
+    key: 36wjm # 秘钥
+upload:
+    size: 2 # 上传大小，单位MB
+    dir: images
+site:
+    login:
+        captcha: true # 是否开启验证码
